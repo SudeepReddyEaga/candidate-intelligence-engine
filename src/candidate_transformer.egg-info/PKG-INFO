@@ -1,0 +1,95 @@
+Metadata-Version: 2.4
+Name: candidate-transformer
+Version: 0.1.0
+Summary: Multi-source candidate data transformer with deterministic ML-assisted matching.
+Author: Eightfold Internship Assignment
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi<1.0,>=0.111
+Requires-Dist: uvicorn[standard]<1.0,>=0.30
+Requires-Dist: pydantic<3.0,>=2.7
+Requires-Dist: python-multipart<1.0,>=0.0.9
+Requires-Dist: jsonschema<5.0,>=4.22
+Requires-Dist: rapidfuzz<4.0,>=3.9
+Requires-Dist: pypdf<6.0,>=4.2
+Provides-Extra: ml
+Requires-Dist: sentence-transformers<4.0,>=3.0; extra == "ml"
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.2; extra == "dev"
+Requires-Dist: pytest-cov<7.0,>=5.0; extra == "dev"
+Requires-Dist: black<26.0,>=24.4; extra == "dev"
+Requires-Dist: isort<7.0,>=5.13; extra == "dev"
+Requires-Dist: flake8<8.0,>=7.0; extra == "dev"
+Requires-Dist: mypy<2.0,>=1.10; extra == "dev"
+Requires-Dist: bandit<2.0,>=1.7; extra == "dev"
+Requires-Dist: pre-commit<5.0,>=3.7; extra == "dev"
+Requires-Dist: httpx<1.0,>=0.27; extra == "dev"
+
+# Candidate Transformer
+
+Multi-source candidate data transformer for the Eightfold Engineering Internship assignment.
+
+The project ingests CSV, ATS JSON, resume PDF text, GitHub profile JSON, and recruiter notes, then normalizes and merges candidate records into a validated canonical JSON document with confidence and provenance.
+
+## Architecture
+
+```mermaid
+flowchart TD
+  A[Source Detection] --> B[Parser]
+  B --> C[Canonical Partial Candidate]
+  C --> D[Normalization]
+  D --> E[ML Matching]
+  E --> F[Conflict Resolution]
+  F --> G[Confidence]
+  G --> H[Provenance]
+  H --> I[Projection]
+  I --> J[JSON Schema Validation]
+  J --> K[Output]
+```
+
+## Run
+
+```bash
+python -m pip install -r requirements-dev.txt
+python main.py --csv examples/recruiter.csv --ats-json examples/ats.json --notes examples/notes.txt --config config/default_projection.json
+```
+
+The default embedding backend is deterministic and lightweight. To enable pretrained SentenceTransformer embeddings:
+
+```bash
+python -m pip install -r requirements-ml.txt
+set CANDIDATE_TRANSFORMER_EMBEDDING_BACKEND=sentence-transformer
+```
+
+Start the API:
+
+```bash
+uvicorn candidate_transformer.api.app:create_app --factory --reload
+```
+
+Docker:
+
+```bash
+docker compose up --build
+```
+
+Swagger docs are available at `http://localhost:8000/docs`.
+
+## Design Principles
+
+- Clean architecture: API and CLI are adapters over the same application pipeline.
+- Deterministic ML: pretrained SentenceTransformer support is available, with a deterministic hash backend for tests and offline deployments.
+- Explainability: confidence scores include field-level explanations.
+- Runtime projection: field selection, renaming, missing-value policy, confidence, and provenance are configurable without code changes.
+- Validation-first output: every API and CLI result is checked against JSON Schema.
+
+## Development
+
+```bash
+make install-dev
+make format
+make lint
+make typecheck
+make security
+make test
+```

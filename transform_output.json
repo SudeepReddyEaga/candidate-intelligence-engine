@@ -1,0 +1,233 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "cand_76291e369a94db79",
+      "full_name": "Harshavardhan Paruchuri",
+      "emails": [
+        "paruchuriharsha123@gmail.com"
+      ],
+      "phones": [
+        "+12021202312",
+        "+20202021",
+        "+7397242914025857025",
+        "+73972449516563251209",
+        "+7398573689853665280",
+        "+73985750883102474240",
+        "+916302734803"
+      ],
+      "location": {
+        "city": null,
+        "region": null,
+        "country": null
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/harsha211",
+        "github": "https://github.com/harsha211",
+        "portfolio": null,
+        "other": []
+      },
+      "headline": null,
+      "years_experience": null,
+      "skills": [
+        {
+          "name": ": Statistics",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Collaboration",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Communication",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Data Visualization",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Exploratory Data Analysis",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Github",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Leadership",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Machine Learning",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Matplotlib",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Pandas",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Power Bi",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Problem Solving",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Python",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Scikit-learn",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        },
+        {
+          "name": "Seaborn",
+          "confidence": 0.67,
+          "sources": [
+            "harshaSpecialized-1.pdf"
+          ]
+        }
+      ],
+      "experience": [],
+      "projects": [
+        {
+          "company": null,
+          "title": "Data Analysis using Microsoft Excel | Github   Nov\u2019 25 - Dec\u2019 25",
+          "start": null,
+          "end": null,
+          "summary": "Executed end-to-end data cleaning, transformation, and analysis using advanced Microsoft Excel techniques to ensure data accuracy and consistency Developed interactive dashboards leveraging Pivot Tables, Charts, Conditional Formatting, and data visualization tools for effective reporting and performance tracking. Identified key trends, patterns, and business insights through exploratory data analysis, enabling data-driven decision-making. Automated reporting workflows and improved analytical efficiency through structured data organization and dynamic Excel functionalities. Tech: Microsoft Excel, Data Cleaning, Data Analysis, Dashboarding, Pivot Tables, Data Visualization, Reporting. Fitness Analytics Dashboard \u2013 Power BI | Github   May\u2019 25 - Jun\u2019 25 Engineered an interactive Fitness Analytics Dashboard using Power BI to monitor and visualize key health, workout, and performance metrics through intuitive reports. Performed data cleaning, transformation, and modeling using Power Query and DAX to ensure accurate analysis and meaningful business insights. Designed dynamic dashboards with KPIs, charts, filters, and drill-through capabilities to track fitness trends, activity patterns, and user performance. Generated actionable insights through data visualization and reporting, enabling data-driven decision-making for fitness monitoring and goal tracking. Tech: Power BI, Power Query, DAX, Data Modeling, Data Visualization, Dashboard Development, KPI Reporting, Data Analysis. Training Android Developer Pro | Certificate  Jun\u2019 25 - Jul\u2019 25 Center for Professional Enhancement Completed a comprehensive Android Development training program covering Android Studio, Kotlin/Java programming, mobile UI/UX design, and application development workflows. Designed and developed Android applications by implementing user interfaces, activity navigation, event handling, and core mobile app functionalities Enhanced application quality through testing, debugging, performance optimization, and gained exposure to the Google Play Store deployment process. Certificates Privacy and Security in Online Social Media | NPTEL Oct\u2019 25 The Bits and Bytes of Computer Networking | Coursera Jan\u2019 25 Live Python Industrial Training | Code Sprint Mar\u2019 24 Extracurricular Activities National Service Scheme (NSS) Volunteer, Lovely Professional University:                                                               Apr\u2019 25 Successfully completed a 7-Day NSS Special Camp, participating in community service, social awareness, and rural development Activities. State Adventure camp:                                                                                                                                              Dec\u2019 25 Participated in the State Adventure Camp, developing leadership, teamwork, and outdoor survival skills."
+        }
+      ],
+      "education": [
+        {
+          "institution": "Lovely Professional University 2023 - Present",
+          "degree": null,
+          "field": null,
+          "end_year": null
+        },
+        {
+          "institution": "Sri Srinivasa JR Collage",
+          "degree": null,
+          "field": null,
+          "end_year": "2023"
+        },
+        {
+          "institution": "Rathnam High School",
+          "degree": null,
+          "field": null,
+          "end_year": "2021"
+        }
+      ],
+      "provenance": [
+        {
+          "field": "name",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "emails",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "phones",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "skills",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "github_url",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "linkedin_url",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "projects",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "education",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        },
+        {
+          "field": "resume_text",
+          "source": "harshaSpecialized-1.pdf",
+          "method": "resume_pdf"
+        }
+      ],
+      "overall_confidence": 0.503
+    }
+  ],
+  "metrics": {
+    "parsing_time_ms": 198.109,
+    "normalization_time_ms": 1.184,
+    "merge_time_ms": 0.547,
+    "confidence_time_ms": 0.135,
+    "validation_failures": 0.0,
+    "pipeline_duration_ms": 207.161
+  }
+}

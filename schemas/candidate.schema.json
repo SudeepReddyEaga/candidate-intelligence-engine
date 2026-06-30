@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/candidate.schema.json",
+  "title": "CanonicalCandidate",
+  "type": "object",
+  "required": [
+    "candidate_id", "full_name", "emails", "phones", "location", 
+    "links", "headline", "years_experience", "skills", 
+    "experience", "education", "provenance", "overall_confidence"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "candidate_id": { "type": "string", "minLength": 1 },
+    "full_name": { "type": ["string", "null"] },
+    "emails": { "type": "array", "items": { "type": "string", "format": "email" }, "uniqueItems": true },
+    "phones": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "location": {
+      "type": "object",
+      "properties": {
+        "city": { "type": ["string", "null"] },
+        "region": { "type": ["string", "null"] },
+        "country": { "type": ["string", "null"] }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "linkedin": { "type": ["string", "null"] },
+        "github": { "type": ["string", "null"] },
+        "portfolio": { "type": ["string", "null"] },
+        "other": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "headline": { "type": ["string", "null"] },
+    "years_experience": { "type": ["number", "null"], "minimum": 0 },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "confidence", "sources"],
+        "properties": {
+          "name": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "sources": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": ["string", "null"] },
+          "company": { "type": ["string", "null"] },
+          "start": { "type": ["string", "null"] },
+          "end": { "type": ["string", "null"] },
+          "summary": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": ["string", "null"] },
+          "company": { "type": ["string", "null"] },
+          "start": { "type": ["string", "null"] },
+          "end": { "type": ["string", "null"] },
+          "summary": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "institution": { "type": ["string", "null"] },
+          "degree": { "type": ["string", "null"] },
+          "field": { "type": ["string", "null"] },
+          "end_year": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "source", "method"],
+        "properties": {
+          "field": { "type": "string" },
+          "source": { "type": "string" },
+          "method": { "type": "string" }
+        }
+      }
+    },
+    "overall_confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  }
+}

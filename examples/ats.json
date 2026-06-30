@@ -1,0 +1,10 @@
+{
+  "candidate": {
+    "full_name": "Ada Byron Lovelace",
+    "email": "ada@example.com",
+    "phone": "4155550100",
+    "location": "SF Bay Area",
+    "skills": ["python", "machine learning", "k8s", "pytorch"],
+    "github": "https://github.com/ada"
+  }
+}
